@@ -1,61 +1,392 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Centro Español de Sindonología. Estudio y difusión de la Sábana Santa de Turín, el Sudario de Oviedo y otras reliquias.">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="color-scheme" content="light">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>CES — Conocer antes de interpretar</title>
-  <link rel="icon" href="assets/ces-seal.png">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <div class="utility" role="region" aria-label="Información del Centro"><div class="wrap utility-inner"><span>ESTUDIO · HISTORIA · PATRIMONIO</span><span>Asociación cultural sin ánimo de lucro <span class="utility-dot" aria-hidden="true">·</span> <a href="#centro">Conozca el CES</a></span></div></div>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="Centro Español de Sindonología, inicio"><img src="assets/ces-seal.png" alt="" width="58" height="58"><span>Centro Español<br>de <strong>Sindonología</strong></span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="navegacion">Menú <span aria-hidden="true">☰</span></button>
-      <nav id="navegacion" aria-label="Navegación principal"><a href="#patrimonio">El patrimonio</a><a href="#centro">El Centro</a><a href="#linteum">Revista Línteum</a><a href="#contacto">Contacto</a><button class="member-button" data-detail="socios">Área de socios <span aria-hidden="true">↗</span></button></nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Centro Español de Sindonología. Estudio y difusión de la Sábana Santa de Turín, el Sudario de Oviedo y otras reliquias."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>CES — Conocer antes de interpretar</title>
+    <link rel="icon" href="assets/ces-seal.png" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="utility" role="region" aria-label="Información del Centro">
+      <div class="wrap utility-inner">
+        <span>ESTUDIO · HISTORIA · PATRIMONIO</span
+        ><span
+          >Asociación cultural sin ánimo de lucro
+          <span class="utility-dot" aria-hidden="true">·</span>
+          <a href="#centro">Conozca el CES</a></span
+        >
+      </div>
     </div>
-  </header>
-  <main id="contenido">
-    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="short-line" aria-hidden="true"></span> CENTRO ESPAÑOL DE SINDONOLOGÍA</p>
-        <h1 id="hero-title">Conocer antes<br>de <em>interpretar.</em></h1>
-        <p class="hero-intro">Historia y ciencia para estudiar<br>las reliquias atribuidas a Jesús.</p>
-        <p class="hero-description">Exploramos la Sábana Santa de Turín, el Sudario de Oviedo y otras reliquias a través de la historia, la investigación y el diálogo.</p>
-        <div class="hero-actions"><a class="button primary" href="#patrimonio">Explorar el patrimonio <span aria-hidden="true">↗</span></a><a class="text-link" href="#centro">Conocer el Centro <span aria-hidden="true">→</span></a></div>
-        <p class="hero-principle">El rigor comienza por distinguir los datos de las interpretaciones.</p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a
+          class="brand"
+          href="#inicio"
+          aria-label="Centro Español de Sindonología, inicio"
+          ><img src="assets/ces-seal.png" alt="" width="58" height="58" /><span
+            >Centro Español<br />de <strong>Sindonología</strong></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="navegacion"
+        >
+          Menú <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navegacion" aria-label="Navegación principal">
+          <a href="#patrimonio">El patrimonio</a><a href="#centro">El Centro</a
+          ><a href="#linteum">Revista Línteum</a><a href="#contacto">Contacto</a
+          ><button class="member-button" data-detail="socios">
+            Área de socios <span aria-hidden="true">↗</span>
+          </button>
+        </nav>
       </div>
-      <figure class="hero-art">
-        <div class="art-frame"><img src="assets/sindone-ces.jpg" width="330" height="468" alt="Rostro de la Síndone de Turín." fetchpriority="high"><span class="art-label" aria-hidden="true">ARCHIVO VISUAL / 01</span><button class="expand-image" data-detail="fotografia" aria-label="Ver la imagen completa de la Síndone"><span aria-hidden="true">⤢</span></button></div>
-        <figcaption><span>LA SÍNDONE DE TURÍN</span><span>Detalle del rostro</span></figcaption>
-      </figure>
-    </section>
-    <div class="section-divider wrap"><span aria-hidden="true">01 — EL PATRIMONIO</span><span>Por dónde empezar <span aria-hidden="true">↓</span></span></div>
-    <section class="heritage wrap" id="patrimonio" aria-labelledby="heritage-title">
-      <div class="section-heading"><h2 id="heritage-title">Los objetos.<br><em>Su estudio.</em></h2><p>Comience por el objeto, conozca su historia y después explore las investigaciones. Un recorrido para orientarse en cada tema.</p></div>
-      <div class="heritage-grid">
-        <article class="heritage-card"><button class="card-image" data-detail="turin" aria-label="Conocer la Síndone de Turín"><img src="assets/turin-small.jpg" width="225" height="151" alt="Presentación del lienzo de la Síndone de Turín en una sala con asistentes." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></button><p class="eyebrow card-location">TURÍN, ITALIA</p><h3><button data-detail="turin">La Síndone de Turín</button></h3><p>El lienzo de Turín: su tejido, su imagen y las huellas de su historia.</p><button class="text-link" data-detail="turin">Conocer la Síndone <span aria-hidden="true">→</span></button></article>
-        <article class="heritage-card"><button class="card-image" data-detail="oviedo" aria-label="Conocer el Sudario de Oviedo"><img src="assets/oviedo.jpg" width="225" height="151" alt="Un investigador examina un tejido con un microscopio." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></button><p class="eyebrow card-location">OVIEDO, ESPAÑA</p><h3><button data-detail="oviedo">El Sudario de Oviedo</button></h3><p>El lienzo de la Catedral de Oviedo, estudiado por el equipo de investigación del CES.</p><button class="text-link" data-detail="oviedo">Conocer el Sudario <span aria-hidden="true">→</span></button></article>
-        <article class="heritage-card"><button class="card-image" data-detail="caliz" aria-label="Conocer el Santo Cáliz de Valencia"><img src="assets/caliz.jpg" width="225" height="151" alt="El Santo Cáliz de Valencia, con su copa y su montura ornamental." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></button><p class="eyebrow card-location">VALENCIA, ESPAÑA</p><h3><button data-detail="caliz">El Santo Cáliz de Valencia</button></h3><p>La copa conservada en Valencia y vinculada por la tradición a la Última Cena.</p><button class="text-link" data-detail="caliz">Conocer el Cáliz <span aria-hidden="true">→</span></button></article>
+    </header>
+    <main id="contenido">
+      <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="short-line" aria-hidden="true"></span> CENTRO ESPAÑOL
+            DE SINDONOLOGÍA
+          </p>
+          <h1 id="hero-title">Conocer antes<br />de <em>interpretar.</em></h1>
+          <p class="hero-intro">
+            Historia y ciencia para estudiar<br />las reliquias atribuidas a
+            Jesús.
+          </p>
+          <p class="hero-description">
+            Exploramos la Sábana Santa de Turín, el Sudario de Oviedo y otras
+            reliquias a través de la historia, la investigación y el diálogo.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#patrimonio"
+              >Explorar el patrimonio <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#centro"
+              >Conocer el Centro <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <p class="hero-principle">
+            El rigor comienza por distinguir los datos de las interpretaciones.
+          </p>
+        </div>
+        <figure class="hero-art">
+          <div class="art-frame">
+            <img
+              src="assets/sindone-ces.jpg"
+              width="330"
+              height="468"
+              alt="Rostro de la Síndone de Turín."
+              fetchpriority="high"
+            /><span class="art-label" aria-hidden="true"
+              >ARCHIVO VISUAL / 01</span
+            ><button
+              class="expand-image"
+              data-detail="fotografia"
+              aria-label="Ver la imagen completa de la Síndone"
+            >
+              <span aria-hidden="true">⤢</span>
+            </button>
+          </div>
+          <figcaption>
+            <span>LA SÍNDONE DE TURÍN</span><span>Detalle del rostro</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="section-divider wrap">
+        <span aria-hidden="true">01 — EL PATRIMONIO</span
+        ><span>Por dónde empezar <span aria-hidden="true">↓</span></span>
       </div>
-    </section>
-    <section class="center-section" id="centro" aria-labelledby="center-title"><div class="wrap center-grid"><div class="center-image"><img src="assets/research.jpg" alt="Dos investigadores observan una imagen del lienzo iluminada desde atrás." width="475" height="310" loading="lazy"><p>ESTUDIO DE LA SÍNDONE</p></div><div class="center-copy"><p class="eyebrow">02 — EL CENTRO</p><h2 id="center-title">Investigar, formar<br><em>y divulgar.</em></h2><p>Somos una asociación cultural sin ánimo de lucro interesada en la figura histórica de Jesús y en los objetos relacionados con ella.</p><ul class="center-activities"><li><strong>Investigación.</strong> Impulsamos estudios propios y apoyamos los de otros investigadores.</li><li><strong>Formación.</strong> Ayudamos a nuestros socios a profundizar en estas materias.</li><li><strong>Divulgación.</strong> Acercamos los conocimientos al público mediante publicaciones y actividades.</li></ul><details><summary>¿Qué es la sindonología? <span aria-hidden="true">+</span></summary><p>La sindonología es el estudio de la Sábana Santa o Santa Síndone. Su nombre procede de las palabras griegas sindon, sábana, y logía, estudio o tratado.</p></details><a class="text-link" href="#contacto">Acérquese al CES <span aria-hidden="true">→</span></a></div></div></section>
-    <section class="president wrap" id="presidencia" aria-labelledby="president-title">
-      <div class="president-profile"><img src="assets/jorge-manuel-ces.jpg" width="624" height="248" alt="Jorge Manuel Rodríguez Almenar, presidente del Centro Español de Sindonología." loading="lazy"><p>JORGE MANUEL RODRÍGUEZ ALMENAR<span>Presidente del CES</span></p></div>
-      <div class="president-body"><p class="eyebrow">NUESTRA FORMA DE TRABAJAR</p><h2 id="president-title">La imparcialidad,<br><em>como punto de partida.</em></h2><p class="institution-principle">Estudiamos los objetos sin dar por supuesta su autenticidad.</p><p>Buscamos conocer qué son estas piezas y qué información pueden aportar sobre Jesús de Nazaret. Las reliquias son un medio para profundizar en su figura histórica.</p><p>El CES es una entidad no confesional en la que participan creyentes y no creyentes, de distintas edades y profesiones.</p><div class="institution-links"><a href="#patrimonio"><span><small>CONOZCA NUESTRA LABOR</small>El estudio de las reliquias</span><span aria-hidden="true">→</span></a><a href="#contacto"><span><small>FORME PARTE DEL CES</small>Información para asociarse</span><span aria-hidden="true">→</span></a></div></div>
-    </section>
-    <section class="journal wrap" id="linteum" aria-labelledby="journal-title"><div class="journal-copy"><p class="eyebrow">03 — PUBLICACIONES</p><h2 id="journal-title">Línteum.<br><em>La revista del CES.</em></h2><p>La revista Línteum reúne trabajos originales y textos de prensa sobre la Síndone y otras reliquias relacionadas. Consulte cómo recibirla.</p><button class="button outline" data-detail="revista">Información sobre Línteum <span aria-hidden="true">↗</span></button></div><figure class="journal-art journal-document"><img src="assets/tejido-ces.jpg" width="710" height="300" alt="Macrofotografía de las fibras del tejido de la Síndone." loading="lazy"><figcaption><span class="eyebrow">EL LIENZO, AL DETALLE</span><span class="journal-document-title">Estudio y documentación.</span></figcaption></figure></section>
-    <section class="contact wrap" id="contacto" aria-labelledby="contact-title"><div><p class="eyebrow">CONTACTO Y PARTICIPACIÓN</p><h2 id="contact-title">Conozca el Centro.<br><em>Participe en su actividad.</em></h2></div><div class="contact-actions"><a class="button primary" href="mailto:ces@linteum.com">Contactar con el Centro <span aria-hidden="true">↗</span></a><p>Información, actividades y cómo asociarse.<br><a href="mailto:ces@linteum.com">ces@linteum.com</a></p></div></section>
-  </main>
-  <footer><div class="wrap footer-main"><a class="brand footer-brand" href="#inicio"><img src="assets/ces-seal.png" alt="" width="54" height="54"><span>Centro Español<br>de <strong>Sindonología</strong></span></a><p>Historia, investigación<br>y conocimiento compartido.</p><nav aria-label="Enlaces al pie"><a href="#patrimonio">El patrimonio</a><a href="#centro">El Centro</a><a href="#linteum">Revista Línteum</a><a href="#inicio">Volver al inicio ↑</a></nav></div><div class="wrap footer-bottom"><span>CES · Centro Español de Sindonología</span><span>Estudio de la Síndone y otras reliquias</span><button class="footer-info" data-detail="acerca">Información del sitio</button></div></footer>
-  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">CENTRO ESPAÑOL DE SINDONOLOGÍA</span><button class="close-dialog" aria-label="Cerrar ventana">✕</button></div><div id="dialog-content"></div></dialog>
-</body>
+      <section
+        class="heritage wrap"
+        id="patrimonio"
+        aria-labelledby="heritage-title"
+      >
+        <div class="section-heading">
+          <h2 id="heritage-title">Los objetos.<br /><em>Su estudio.</em></h2>
+          <p>
+            Comience por el objeto, conozca su historia y después explore las
+            investigaciones. Un recorrido para orientarse en cada tema.
+          </p>
+        </div>
+        <div class="heritage-grid">
+          <article class="heritage-card">
+            <button
+              class="card-image"
+              data-detail="turin"
+              aria-label="Conocer la Síndone de Turín"
+            >
+              <img
+                src="assets/turin-small.jpg"
+                width="225"
+                height="151"
+                alt="Presentación del lienzo de la Síndone de Turín en una sala con asistentes."
+                loading="lazy"
+              /><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="eyebrow card-location">TURÍN, ITALIA</p>
+            <h3><button data-detail="turin">La Síndone de Turín</button></h3>
+            <p>
+              El lienzo de Turín: su tejido, su imagen y las huellas de su
+              historia.
+            </p>
+            <button class="text-link" data-detail="turin">
+              Conocer la Síndone <span aria-hidden="true">→</span>
+            </button>
+          </article>
+          <article class="heritage-card">
+            <button
+              class="card-image"
+              data-detail="oviedo"
+              aria-label="Conocer el Sudario de Oviedo"
+            >
+              <img
+                src="assets/oviedo.jpg"
+                width="225"
+                height="151"
+                alt="Un investigador examina un tejido con un microscopio."
+                loading="lazy"
+              /><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="eyebrow card-location">OVIEDO, ESPAÑA</p>
+            <h3><button data-detail="oviedo">El Sudario de Oviedo</button></h3>
+            <p>
+              El lienzo de la Catedral de Oviedo, estudiado por el equipo de
+              investigación del CES.
+            </p>
+            <button class="text-link" data-detail="oviedo">
+              Conocer el Sudario <span aria-hidden="true">→</span>
+            </button>
+          </article>
+          <article class="heritage-card">
+            <button
+              class="card-image"
+              data-detail="caliz"
+              aria-label="Conocer el Santo Cáliz de Valencia"
+            >
+              <img
+                src="assets/caliz.jpg"
+                width="225"
+                height="151"
+                alt="El Santo Cáliz de Valencia, con su copa y su montura ornamental."
+                loading="lazy"
+              /><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="eyebrow card-location">VALENCIA, ESPAÑA</p>
+            <h3>
+              <button data-detail="caliz">El Santo Cáliz de Valencia</button>
+            </h3>
+            <p>
+              La copa conservada en Valencia y vinculada por la tradición a la
+              Última Cena.
+            </p>
+            <button class="text-link" data-detail="caliz">
+              Conocer el Cáliz <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section
+        class="center-section"
+        id="centro"
+        aria-labelledby="center-title"
+      >
+        <div class="wrap center-grid">
+          <div class="center-image">
+            <img
+              src="assets/research.jpg"
+              alt="Dos investigadores observan una imagen del lienzo iluminada desde atrás."
+              width="475"
+              height="310"
+              loading="lazy"
+            />
+            <p>ESTUDIO DE LA SÍNDONE</p>
+          </div>
+          <div class="center-copy">
+            <p class="eyebrow">02 — EL CENTRO</p>
+            <h2 id="center-title">
+              Investigar, formar<br /><em>y divulgar.</em>
+            </h2>
+            <p>
+              Somos una asociación cultural sin ánimo de lucro interesada en la
+              figura histórica de Jesús y en los objetos relacionados con ella.
+            </p>
+            <ul class="center-activities">
+              <li>
+                <strong>Investigación.</strong> Impulsamos estudios propios y
+                apoyamos los de otros investigadores.
+              </li>
+              <li>
+                <strong>Formación.</strong> Ayudamos a nuestros socios a
+                profundizar en estas materias.
+              </li>
+              <li>
+                <strong>Divulgación.</strong> Acercamos los conocimientos al
+                público mediante publicaciones y actividades.
+              </li>
+            </ul>
+            <details>
+              <summary>
+                ¿Qué es la sindonología? <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                La sindonología es el estudio de la Sábana Santa o Santa
+                Síndone. Su nombre procede de las palabras griegas sindon,
+                sábana, y logía, estudio o tratado.
+              </p>
+            </details>
+            <a class="text-link" href="#contacto"
+              >Acérquese al CES <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="president wrap"
+        id="presidencia"
+        aria-labelledby="president-title"
+      >
+        <div class="president-profile">
+          <img
+            src="assets/jorge-manuel-ces.jpg"
+            width="624"
+            height="248"
+            alt="Jorge Manuel Rodríguez Almenar, presidente del Centro Español de Sindonología."
+            loading="lazy"
+          />
+          <p>JORGE MANUEL RODRÍGUEZ ALMENAR<span>Presidente del CES</span></p>
+        </div>
+        <div class="president-body">
+          <p class="eyebrow">NUESTRA FORMA DE TRABAJAR</p>
+          <h2 id="president-title">
+            La imparcialidad,<br /><em>como punto de partida.</em>
+          </h2>
+          <p class="institution-principle">
+            Estudiamos los objetos sin dar por supuesta su autenticidad.
+          </p>
+          <p>
+            Buscamos conocer qué son estas piezas y qué información pueden
+            aportar sobre Jesús de Nazaret. Las reliquias son un medio para
+            profundizar en su figura histórica.
+          </p>
+          <p>
+            El CES es una entidad no confesional en la que participan creyentes
+            y no creyentes, de distintas edades y profesiones.
+          </p>
+          <div class="institution-links">
+            <a href="#patrimonio"
+              ><span
+                ><small>CONOZCA NUESTRA LABOR</small>El estudio de las
+                reliquias</span
+              ><span aria-hidden="true">→</span></a
+            ><a href="#contacto"
+              ><span
+                ><small>FORME PARTE DEL CES</small>Información para
+                asociarse</span
+              ><span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="journal wrap"
+        id="linteum"
+        aria-labelledby="journal-title"
+      >
+        <div class="journal-copy">
+          <p class="eyebrow">03 — PUBLICACIONES</p>
+          <h2 id="journal-title">Línteum.<br /><em>La revista del CES.</em></h2>
+          <p>
+            La revista Línteum reúne trabajos originales y textos de prensa
+            sobre la Síndone y otras reliquias relacionadas. Consulte cómo
+            recibirla.
+          </p>
+          <button class="button outline" data-detail="revista">
+            Información sobre Línteum <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <figure class="journal-art journal-document">
+          <img
+            src="assets/tejido-ces.jpg"
+            width="710"
+            height="300"
+            alt="Macrofotografía de las fibras del tejido de la Síndone."
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="eyebrow">EL LIENZO, AL DETALLE</span
+            ><span class="journal-document-title"
+              >Estudio y documentación.</span
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        class="contact wrap"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div>
+          <p class="eyebrow">CONTACTO Y PARTICIPACIÓN</p>
+          <h2 id="contact-title">
+            Conozca el Centro.<br /><em>Participe en su actividad.</em>
+          </h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:ces@linteum.com"
+            >Contactar con el Centro <span aria-hidden="true">↗</span></a
+          >
+          <p>
+            Información, actividades y cómo asociarse.<br /><a
+              href="mailto:ces@linteum.com"
+              >ces@linteum.com</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-main">
+        <a class="brand footer-brand" href="#inicio"
+          ><img src="assets/ces-seal.png" alt="" width="54" height="54" /><span
+            >Centro Español<br />de <strong>Sindonología</strong></span
+          ></a
+        >
+        <p>Historia, investigación<br />y conocimiento compartido.</p>
+        <nav aria-label="Enlaces al pie">
+          <a href="#patrimonio">El patrimonio</a><a href="#centro">El Centro</a
+          ><a href="#linteum">Revista Línteum</a
+          ><a href="#inicio">Volver al inicio ↑</a>
+        </nav>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>CES · Centro Español de Sindonología</span
+        ><span>Estudio de la Síndone y otras reliquias</span
+        ><button class="footer-info" data-detail="acerca">
+          Información del sitio
+        </button>
+      </div>
+    </footer>
+    <dialog id="detail-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <span class="eyebrow">CENTRO ESPAÑOL DE SINDONOLOGÍA</span
+        ><button class="close-dialog" aria-label="Cerrar ventana">✕</button>
+      </div>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
 </html>
