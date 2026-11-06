@@ -1,42 +1,87 @@
-/* Selector de idioma independiente del menú, utilizable sin JavaScript. */
+/* Controles nativos con etiquetas visibles y espacio para ampliar el texto. */
 .language-bar {
   background: var(--paper, var(--bg, #f7f5ef));
   color: var(--ink, #2f302b);
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid var(--line, #d8d5ca);
 }
-.language-bar .language-switch {
-  width: min(1280px, calc(100% - 48px));
+.language-inner {
+  width: min(1280px, calc(100% - 40px));
   margin-inline: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-  padding-block: 4px;
+  padding-block: 6px;
   font:
     500 14px/1.5 "DM Sans",
     Arial,
     sans-serif;
 }
-.language-switch a {
-  display: inline-flex;
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0;
+}
+.language-switch[hidden] {
+  display: none;
+}
+.language-switch label {
+  font-weight: 500;
+}
+.language-switch select,
+.language-switch button {
   min-height: 44px;
+  max-width: 100%;
+  border: 1px solid currentColor;
+  border-radius: 4px;
   padding: 8px 12px;
+  background: var(--paper, var(--bg, #f7f5ef));
+  color: inherit;
+  font: inherit;
+}
+.language-switch select {
+  cursor: pointer;
+}
+.language-switch button {
+  cursor: pointer;
+  font-weight: 600;
+}
+.language-switch button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.language-switch :is(select, button):focus-visible,
+.language-fallback :is(summary, a):focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+.language-fallback {
+  width: fit-content;
+  margin-left: auto;
+}
+.language-fallback summary,
+.language-fallback a {
+  min-height: 44px;
+  padding: 10px;
+  cursor: pointer;
+}
+.language-fallback nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.language-fallback a {
   text-decoration: underline;
   text-underline-offset: 4px;
-  border: 1px solid transparent;
-  border-radius: 3px;
 }
-.language-switch a[aria-current="page"] {
+.language-fallback a[aria-current="page"] {
   font-weight: 700;
-  border-color: currentColor;
-  text-decoration: none;
 }
-.language-switch a:hover {
-  text-decoration-thickness: 2px;
+/* Las palabras largas también deben caber en las traducciones y con zoom. */
+html[lang="de"] :is(h1, h2, h3, p, .brand),
+html[lang="fr"] :is(h1, h2, h3, p, .brand),
+html[lang="it"] :is(h1, h2, h3, p, .brand) {
+  overflow-wrap: anywhere;
 }
-.language-switch a:focus-visible {
-  outline: 3px solid currentColor;
-  outline-offset: 2px;
+html[lang="de"] :is(h2, h3, p) {
+  hyphens: auto;
 }
