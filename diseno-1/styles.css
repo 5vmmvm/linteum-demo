@@ -23,3 +23,6 @@
 
 .center-activities{list-style:none;padding:0;margin:19px 0 0;display:grid;gap:10px}.center-activities li{font-size:14px;line-height:1.75;color:var(--muted);padding-left:13px;border-left:1px solid #b9b09b}.center-activities strong{font-weight:600;color:var(--ink)}
 @media(max-width:560px){.center-activities li{font-size:15px}.center-copy h2{font-size:42px}}
+
+/* Enlace de la franja superior reconocible sin depender del color. */
+.utility a{text-decoration:underline;text-underline-offset:4px}
