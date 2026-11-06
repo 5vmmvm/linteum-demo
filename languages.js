@@ -1,31 +1,42 @@
 "use strict";
 
-// Sólo se permite navegar a las versiones locales incluidas en el sitio.
-const LANGUAGE_PAGES = new Map([
-  ["es", "index.html"],
-  ["en", "en.html"],
-  ["fr", "fr.html"],
-  ["de", "de.html"],
-  ["it", "it.html"],
-]);
+const languagePicker = document.querySelector(".language-picker");
 
-const languageForm = document.querySelector(".language-switch");
-const languageSelect = document.querySelector("#site-language");
+if (languagePicker) {
+  const languageToggle = languagePicker.querySelector("summary");
+  const languageLinks = [...languagePicker.querySelectorAll("a")];
 
-if (languageForm && languageSelect) {
-  // Volver desde otra página restaura siempre el idioma de este documento.
-  function restoreCurrentLanguage() {
-    languageSelect.value = document.documentElement.lang;
+  function closeLanguagePicker(returnFocus = false) {
+    languagePicker.open = false;
+    if (returnFocus) languageToggle.focus();
   }
 
-  restoreCurrentLanguage();
-  window.addEventListener("pageshow", restoreCurrentLanguage);
-  languageForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const destination = LANGUAGE_PAGES.get(languageSelect.value);
-    if (destination && languageSelect.value !== document.documentElement.lang) {
-      window.location.assign(destination);
+  // Los enlaces funcionan con Tab y Enter incluso sin este script.
+  languagePicker.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && languagePicker.open) {
+      event.preventDefault();
+      closeLanguagePicker(true);
     }
+    if (!["ArrowDown", "ArrowUp"].includes(event.key)) return;
+    event.preventDefault();
+    languagePicker.open = true;
+    const currentIndex = languageLinks.indexOf(document.activeElement);
+    const direction = event.key === "ArrowDown" ? 1 : -1;
+    const nextIndex =
+      currentIndex === -1
+        ? direction === 1
+          ? 0
+          : languageLinks.length - 1
+        : (currentIndex + direction + languageLinks.length) %
+          languageLinks.length;
+    languageLinks[nextIndex].focus();
   });
-  languageForm.hidden = false;
+
+  document.addEventListener("click", (event) => {
+    if (!languagePicker.contains(event.target)) closeLanguagePicker();
+  });
+  languagePicker.addEventListener("focusout", (event) => {
+    if (!languagePicker.contains(event.relatedTarget)) closeLanguagePicker();
+  });
+  window.addEventListener("pageshow", () => closeLanguagePicker());
 }

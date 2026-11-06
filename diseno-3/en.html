@@ -31,32 +31,54 @@
   <body>
     <a class="skip-link" href="#contenido">Skip to content</a>
 
-    <div class="language-bar">
+    <div class="language-bar" role="region" aria-label="Available languages">
       <div class="language-inner">
-        <form class="language-switch" aria-label="Language" hidden>
-          <label for="site-language">Language</label>
-          <select id="site-language" name="language">
-            <option value="es" lang="es">Español</option>
-            <option value="en" lang="en" selected>English</option>
-            <option value="fr" lang="fr">Français</option>
-            <option value="de" lang="de">Deutsch</option>
-            <option value="it" lang="it">Italiano</option>
-          </select>
-          <button type="submit">Apply</button>
-        </form>
-        <noscript
-          ><details class="language-fallback">
-            <summary>Language: English</summary>
-            <nav aria-label="Language">
-              <a href="index.html" lang="es" hreflang="es">Español</a
-              ><a href="en.html" lang="en" hreflang="en" aria-current="page"
-                >English</a
-              ><a href="fr.html" lang="fr" hreflang="fr">Français</a
-              ><a href="de.html" lang="de" hreflang="de">Deutsch</a
-              ><a href="it.html" lang="it" hreflang="it">Italiano</a>
-            </nav>
-          </details></noscript
-        >
+        <details class="language-picker">
+          <summary>
+            <svg
+              class="language-globe"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18" /></svg
+            ><span lang="en">Language</span
+            ><svg
+              class="language-chevron"
+              viewBox="0 0 16 16"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="m4 6 4 4 4-4" />
+            </svg>
+          </summary>
+          <nav class="language-options" aria-label="Available languages">
+            <ul>
+              <li><a href="index.html" lang="es" hreflang="es">Español</a></li>
+              <li>
+                <a href="en.html" lang="en" hreflang="en" aria-current="page"
+                  >English<span class="language-check" aria-hidden="true"
+                    >✓</span
+                  ></a
+                >
+              </li>
+              <li><a href="fr.html" lang="fr" hreflang="fr">Français</a></li>
+              <li><a href="de.html" lang="de" hreflang="de">Deutsch</a></li>
+              <li><a href="it.html" lang="it" hreflang="it">Italiano</a></li>
+            </ul>
+          </nav>
+        </details>
       </div>
     </div>
     <div class="utility" role="region" aria-label="About the Centre">
