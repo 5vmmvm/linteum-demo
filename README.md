@@ -16,13 +16,21 @@ Cuatro presentaciones de una misma portada para el Centro Español de Sindonolog
 
 Dentro de cada diseño:
 
-- `index.html` contiene el texto y la estructura semántica.
+- `index.html` contiene la portada en español; `en.html`, su versión en inglés. Ambas incluyen el texto completo y la estructura semántica, sin depender de JavaScript para traducirlas.
 - `app.js` gestiona el menú y los diálogos. Los textos de las fichas están agrupados al principio del archivo.
 - `styles.css` define la presentación. En los diseños 2, 3 y 4 importa primero los estilos base del diseño 1.
 - `fonts.css` carga las tipografías locales.
 - `assets/` contiene fotografías, sello, tipografías y sus licencias.
 
 El HTML, el JavaScript y las imágenes son iguales en las cuatro propuestas. Para modificar contenido o comportamiento, aplique el mismo cambio a las cuatro carpetas. Para modificar una apariencia, edite únicamente su `styles.css`. Las copias de los recursos permiten que cada carpeta mantenga sus rutas locales.
+
+## Idiomas
+
+El índice y los cuatro diseños están disponibles en español e inglés. Cada idioma tiene su propia dirección: por ejemplo, `diseno-1/` y `diseno-1/en.html`. El índice inglés enlaza directamente a los diseños en inglés.
+
+El selector utiliza enlaces normales con el nombre de cada idioma en su propia lengua, atributos `lang` y `hreflang`, y `aria-current` para identificar la página actual. El idioma del documento también se declara en `<html>`. No hay redirecciones automáticas ni preferencias guardadas en cookies.
+
+`languages.css` define el selector compartido. En cada `app.js`, `SPANISH_DETAILS`, `ENGLISH_DETAILS` e `interfaceText` contienen los textos de los diálogos y sus controles. Al cambiar una portada, actualice también su traducción, sus textos alternativos y sus etiquetas accesibles. Los enlaces a la web original mantienen su destino en español y lo indican en inglés.
 
 ## Ver el sitio en el equipo
 

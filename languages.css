@@ -1,0 +1,42 @@
+/* Selector de idioma independiente del menú, utilizable sin JavaScript. */
+.language-bar {
+  background: var(--paper, var(--bg, #f7f5ef));
+  color: var(--ink, #2f302b);
+  border-bottom: 1px solid currentColor;
+}
+.language-bar .language-switch {
+  width: min(1280px, calc(100% - 48px));
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-block: 4px;
+  font:
+    500 14px/1.5 "DM Sans",
+    Arial,
+    sans-serif;
+}
+.language-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.language-switch a[aria-current="page"] {
+  font-weight: 700;
+  border-color: currentColor;
+  text-decoration: none;
+}
+.language-switch a:hover {
+  text-decoration-thickness: 2px;
+}
+.language-switch a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+}
